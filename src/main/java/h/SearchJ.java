@@ -15,13 +15,12 @@ public class SearchJ {
     }
 
     public List<Double> get_double() throws IOException {
-        String contents = new String(Files.readAllBytes(Paths.get("real_num_n.txt")), StandardCharsets.UTF_8);
-
         /**
          * to run test in Idea use this location:
          */
 //        String contents = new String(Files.readAllBytes(Paths.get("../../real_num_n.txt")), StandardCharsets.UTF_8);
 
+        String contents = new String(Files.readAllBytes(Paths.get("real_num_n.txt")), StandardCharsets.UTF_8);
         List<String> words = Arrays.asList(contents.split("\n"));
         List<Double> result = new ArrayList<>();
         for (int i = 0; i < words.size(); i++) {
