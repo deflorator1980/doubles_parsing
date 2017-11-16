@@ -15,6 +15,10 @@ public class JumpSearch
         // present (if it is present)
         int prev = 0;
 //        while ((int)arr[Math.min(step, n)-1] < x)
+
+        /**
+         * todo step += instead of 47 retun -1
+         */
         while ((int)arr[Math.min(step, n)-1] < (Math.min(step, n)-1))
         {
             prev = step;
@@ -48,7 +52,7 @@ public class JumpSearch
     {
 //        int arr[] = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610};
 //        double arr[] = {1.2, 2.4, 3.11, 3.14, 10.14, 20.14};
-        int arr[] = {-2, -1, 0 , 3, 10, 20};
+        int arr[] = {-2, -1, 0 , 2, 4, 20};
 //        int arr[] = {0, 2, 3 , 4, 5, 20};
 //        int x = 55;
         int x = 3;
