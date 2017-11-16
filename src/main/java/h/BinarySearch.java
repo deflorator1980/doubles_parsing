@@ -4,7 +4,8 @@ package h;
 class BinarySearch {
     // Returns index of x if it is present in arr[l..r], else
     // return -1
-    int binarySearch(int arr[], int l, int r, int x) {
+//    int binarySearch(int arr[], int l, int r, int x) {
+    int binarySearch(double arr[], int l, int r, int x) {
         if (r >= l) {
             int mid = l + (r - l) / 2;
 //            x = mid;
@@ -31,9 +32,8 @@ class BinarySearch {
     // Driver method to test above
     public static void main(String args[]) {
         BinarySearch ob = new BinarySearch();
-//        int arr[] = {2,3,4,10,40};
-//        double arr[] = {1.2, 2.4, 3.11, 3.14, 10.14, 20.14};
-        int arr[] = {-2, -1, 0 , 3, 10, 20};
+        double arr[] = {1.2, 2.4, 3.11, 3.14, 10.14, 20.14};
+//        int arr[] = {-2, -1, 0 , 3, 10, 20};
         int n = arr.length;
 //        int x = 3;
         int x = 3;
