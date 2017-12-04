@@ -19,7 +19,8 @@ class BinarySearch {
     public static void main(String args[]) {
         BinarySearch ob = new BinarySearch();
 //        double arr[] = {1.2, 2.4, 3.11, 3.14, 10.14, 20.14};
-        double arr[] = {1.2, 2.4, 3.11, 3.14, 3.44, 5.14};
+        double arr[] = {1, 2, 2.1, 4, 5, 6, 7, 8, 9, 10};
+//        double arr[] = {1.2, 2.4, 3.11, 3.14, 3.44, 5.14};
 //        double arr[] = {1.2, 2.4, 3.11, 4.14, 5.04, 5.14};
 //        int arr[] = {-2, -1, 0 , 3, 10, 20};
         int result = ob.binarySearch(arr, 0, arr.length - 1);
