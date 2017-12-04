@@ -15,7 +15,7 @@ class BinarySearch {
 
             // If element is smaller than mid, then it can only
             // be present in left subarray
-            if ((int) arr[mid] > mid)
+            if ((int) arr[mid] < mid)
 //                x = mid -1;
                 return binarySearch(arr, l, mid - 1, mid -1);
 
@@ -32,7 +32,9 @@ class BinarySearch {
     // Driver method to test above
     public static void main(String args[]) {
         BinarySearch ob = new BinarySearch();
-        double arr[] = {1.2, 2.4, 3.11, 3.14, 10.14, 20.14};
+//        double arr[] = {1.2, 2.4, 3.11, 3.14, 10.14, 20.14};
+//        double arr[] = {1.2, 2.4, 3.11, 3.14, 3.44, 5.14};
+        double arr[] = {1.2, 2.4, 3.11, 4.14, 5.04, 5.14};
 //        int arr[] = {-2, -1, 0 , 3, 10, 20};
         int n = arr.length;
 //        int x = 3;
